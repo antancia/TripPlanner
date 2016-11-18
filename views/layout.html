@@ -3,13 +3,31 @@
 <title>Trip Planner - {% block title %}{% endblock %}</title>
 <head>
     <!-- Stylesheets go here! -->
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/tripplanner.css">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
 </head>
 <body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header ">
+        <div class="navbar-brand glyphicon glyphicon-road" aria-hidden="true"></div>
+        <a class="navbar-brand" href="/">Trip Planner</a>
+      </div>
+      <div class="navbar-links">
+        <a class="navbar-text navbar-left" href="/about">About</a>
+        <a class="navbar-text navbar-left" href="/contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
 {% block content %}
 {% endblock %}
 
 <!-- Script tags go here! -->
+<script src="./jquery/jquery.min.js"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0DctjFL5BHl5X7CRkCFwZFcKVUh2fc8A&sensor=true" async defer></script> -->
 
 </body>
 </html>

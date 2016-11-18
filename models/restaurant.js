@@ -1,21 +1,21 @@
 const Sequelize = require('sequelize');
 const dbConnection = require('./_db');
 
-const Hotel = dbConnection.define('hotel', {
+const Restaurant = dbConnection.define('restaurant', {
     name: {
       type: Sequelize.STRING,
       allowNull: false
     },
-    num_stars: {
-      type: Sequelize.DECIMAL,
+    cuisine: {
+      type: Sequelize.TEXT,
       allowNull: false
     },
-    amenities: {
-      type: Sequelize.TEXT,
+    price: {
+      type: Sequelize.DECIMAL,
       allowNull: false
     }
 });
 
 
 
-module.exports = Hotel;
+module.exports = Restaurant;

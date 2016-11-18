@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 40px;
+  /*width: 100%;*/
+}
+
+h3 {
+  text-align: center;
+  display: inline;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar-column {
+  background-color: gray;
+}
+
+.row {
+
+}
+
+.col-lg-3 {
+  width: 25%;
+  padding: 25px;
+}
+
+.col-lg-9 {
+
+}
+
+select {
+  width: 80%;
+}
+
+button {
+  /*height: 25px;*/
+}
+
+.schedule-selector {
+  height: 35%;
+}
+
+.day {
+  padding: 10%;
+  height: 10%;
+}
+
+.schedule {
+  height: 55%;
+}
