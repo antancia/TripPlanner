@@ -5,14 +5,14 @@
 {% block content %}
 <div id="app" class="clearfix">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-9 map-column">
+    <!-- <div class="row"> -->
+      <div class="col-lg-8 map-column">
         <div id="map"></div>
         </div>
-      <div class="col-lg-3 sidebar-column">
+      <div class="col-lg-4 sidebar-column">
           <div class="row schedule-selector">
               <h4 class="schedule-header">Hotels</h4>
-                <div>
+                <div class="dropdown-group">
                   <select name="hotels">
                     {% for hotel in hotels%}
                       <option value="{{hotel.name}}">{{hotel.name}}</option>
@@ -22,8 +22,8 @@
                   </button>
                 </div>
 
-              <h4>Restaurants</h4>
-                <div class="schedule-header">
+              <h4 class="schedule-header">Restaurants</h4>
+                <div class="dropdown-group">
                   <select name="restaurants">
                     {% for restaurant in restaurants%}
                       <option value="{{restaurant.name}}">{{restaurant.name}}</option>
@@ -34,7 +34,7 @@
                 </div>
 
               <h4 class="schedule-header">Activities</h4>
-                <div>
+                <div class="dropdown-group">
                   <select name="activities">
                     {% for activity in activities%}
                       <option value="{{activity.name}}">{{activity.name}}</option>
@@ -45,7 +45,7 @@
                 </div>
           </div>
           <div class="row day">
-            <h3>Current Day</h3>
+            <h3>Day One</h3>
             <button class="btn btn-default">X</button>
           </div>
           <div class="row schedule">
@@ -76,7 +76,7 @@
           </div>
       </div>
 
-    </div>
+    <!-- </div> -->
   </div>
 </div>
 {% endblock %}

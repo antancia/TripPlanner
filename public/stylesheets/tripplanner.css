@@ -362,12 +362,7 @@ body {
   height: 100%;
   padding: 0px; }
 
-.row {
-  width: 100%;
-  height: 100%;
-  margin: 0px; }
-
-.col-lg-9 {
+.col-lg-8 {
   height: 100%; }
 
 .map-column {
@@ -376,34 +371,46 @@ body {
   .map-column #map {
     height: 100%; }
 
-.col-lg-3 {
-  width: 25%;
+.col-lg-4 {
   padding: 20px; }
 
 .sidebar-column {
-  background-color: white;
+  background-color: #f2f3f4;
   overflow-y: scroll;
-  height: 100%; }
+  height: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px; }
   .sidebar-column h3 {
     text-align: center;
     display: inline; }
+  .sidebar-column .row {
+    background-color: white;
+    border: 3px solid lightblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px; }
 
 .schedule-selector {
-  height: 35%; }
+  height: auto; }
   .schedule-selector select {
     width: 80%;
-    height: 25px; }
+    height: 27px;
+    vertical-align: bottom; }
   .schedule-selector button {
-    height: 25px; }
+    height: 27px; }
     .schedule-selector button .glyphicon {
-      vertical-align: center;
+      vertical-align: middle;
       text-align: center;
       margin: auto; }
+  .schedule-selector .dropdown-group {
+    height: 30px; }
 
 .day {
-  padding: 10%;
-  height: 10%;
-  margin: 25px; }
+  height: auto;
+  text-align: center; }
 
 .schedule {
-  height: 55%; }
+  height: auto; }
+  .schedule .btn-group {
+    margin-left: auto;
+    margin-right: auto; }
