@@ -13,9 +13,10 @@
     <div class="container-fluid">
       <div class="navbar-header ">
         <div class="navbar-brand glyphicon glyphicon-road" aria-hidden="true"></div>
-        <a class="navbar-brand" href="/">Trip Planner</a>
+        <a class="navbar-brand">Trip Planner</a>
       </div>
       <div class="navbar-links">
+        <a class="navbar-text navbar-left" href="/">Home</a>
         <a class="navbar-text navbar-left" href="/about">About</a>
         <a class="navbar-text navbar-left" href="/contact">Contact</a>
       </div>
@@ -27,7 +28,15 @@
 
 <!-- Script tags go here! -->
 <script src="./jquery/jquery.min.js"></script>
-<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0DctjFL5BHl5X7CRkCFwZFcKVUh2fc8A&sensor=true" async defer></script> -->
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0DctjFL5BHl5X7CRkCFwZFcKVUh2fc8A&callback=initMap" async defer></script>
+<script>
+  var map;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: -34.397, lng: 150.644},
+      zoom: 8
+    });
+  }
+</script>
 </body>
 </html>

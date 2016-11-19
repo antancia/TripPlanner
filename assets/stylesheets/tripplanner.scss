@@ -1,5 +1,97 @@
 @import "normalize";
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
 body {
-  padding: 40px;
+  padding-top: 50px;
+  height: 100%;
+  /*width: 100%;*/
+}
+
+.navbar {
+  background-color: white;
+  .navbar-text {
+    font-size: 15px;
+  }
+}
+
+#app {
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+.col-lg-9 {
+  height: 100%;
+  // padding: 0px;
+  // margin: 0px;
+}
+
+
+.map-column {
+  padding: 0px;
+  height: 100%;
+  #map {
+    height: 100%;
+  }
+}
+
+.col-lg-3 {
+  width: 25%;
+  padding: 20px;
+  // height: 100%;
+}
+
+.sidebar-column {
+  background-color: white;
+  overflow-y: scroll;
+  height: 100%;
+
+  h3 {
+    text-align: center;
+    display: inline;
+  }
+}
+
+.schedule-selector {
+  height: 35%;
+  select {
+    width: 80%;
+    height: 25px;
+  }
+  button {
+    height: 25px;
+
+    .glyphicon {
+      vertical-align: center;
+      text-align: center;
+      margin: auto;
+    }
+  }
+}
+
+.day {
+  padding: 10%;
+  height: 10%;
+  margin: 25px;
+}
+
+.schedule {
+  height: 55%;
 }
