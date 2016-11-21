@@ -338,6 +338,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: lobster;
+  src: url(../fonts/lobster_1.3.otf); }
+
 * {
   box-sizing: border-box; }
 
@@ -350,9 +354,23 @@ body {
   /*width: 100%;*/ }
 
 .navbar {
-  background-color: white; }
+  border: 0px;
+  background-color: #23425b; }
   .navbar .navbar-text {
-    font-size: 15px; }
+    font-size: 15px;
+    color: white; }
+  .navbar .title-font {
+    font-family: lobster;
+    font-size: 28px;
+    color: white; }
+  .navbar .title-font:hover {
+    color: #f7fffe; }
+  .navbar .glyphicon {
+    color: yellow;
+    font-size: 20px;
+    padding-top: 11px; }
+  .navbar .glyphicon:hover {
+    color: yellow; }
 
 #app {
   height: 100%; }
@@ -375,7 +393,7 @@ body {
   padding: 20px; }
 
 .sidebar-column {
-  background-color: #f2f3f4;
+  background-color: white;
   overflow-y: scroll;
   height: 100%;
   padding-top: 0px;
@@ -383,21 +401,29 @@ body {
   .sidebar-column h3 {
     text-align: center;
     display: inline; }
+  .sidebar-column hr {
+    height: 1px;
+    background-color: #ccc; }
   .sidebar-column .row {
-    background-color: white;
-    border: 3px solid lightblue;
+    background-color: #f2f3f4;
+    border: 3px;
     border-radius: 10px;
     padding: 10px;
     margin: 20px; }
+  .sidebar-column .schedule {
+    padding: 0px; }
+  .sidebar-column .schedule-selector {
+    padding: 0px; }
 
 .schedule-selector {
   height: auto; }
   .schedule-selector select {
     width: 80%;
-    height: 27px;
+    height: 28px;
     vertical-align: bottom; }
   .schedule-selector button {
-    height: 27px; }
+    height: 27px;
+    margin-bottom: 1px; }
     .schedule-selector button .glyphicon {
       vertical-align: middle;
       text-align: center;
@@ -411,6 +437,9 @@ body {
 
 .schedule {
   height: auto; }
-  .schedule .btn-group {
-    margin-left: auto;
-    margin-right: auto; }
+
+.panel-heading {
+  border: 3px;
+  margin-bottom: 0px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #ccc !important; }

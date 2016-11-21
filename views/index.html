@@ -10,7 +10,11 @@
         <div id="map"></div>
         </div>
       <div class="col-lg-4 sidebar-column">
-          <div class="row schedule-selector">
+          <div class="row schedule-selector panel-default">
+            <div class="panel-heading panel-title">
+            <h3 class="section-title-text">Select Trip Options</h3>
+            </div>
+            <div class="panel-body">
               <h4 class="schedule-header">Hotels</h4>
                 <div class="dropdown-group">
                   <select name="hotels">
@@ -18,7 +22,7 @@
                       <option value="{{hotel.name}}">{{hotel.name}}</option>
                     {% endfor %}
                   </select>
-                  <button class="btn glyphicon glyphicon-plus">
+                  <button type="button" class="btn btn-sm btn-success">Add
                   </button>
                 </div>
 
@@ -29,7 +33,7 @@
                       <option value="{{restaurant.name}}">{{restaurant.name}}</option>
                     {% endfor %}
                   </select>
-                  <button class="btn glyphicon glyphicon-plus">
+                  <button type="button" class="btn btn-sm btn-success">Add
                   </button>
                 </div>
 
@@ -40,32 +44,36 @@
                       <option value="{{activity.name}}">{{activity.name}}</option>
                     {% endfor %}
                   </select>
-                  <button class="btn glyphicon glyphicon-plus">
+                  <button type="button" class="btn btn-sm btn-success">Add
                   </button>
                 </div>
+              </div>
           </div>
-          <div class="row day">
-            <h3>Day One</h3>
-            <button class="btn btn-default">X</button>
-          </div>
-          <div class="row schedule">
-                <div class="btn-group" role="group">
+          <div class="row schedule panel-default">
+            <div class="panel panel-heading">
+            <h3 class="section-title-text">Day One</h3>
+            <button type="button" class="btn btn-xs btn-default">
+              <span class="glyphicon glyphicon-trash"></span>&nbsp;
+            </button>
+                <div class="btn-group btn-group-sm pull-right" role="group">
                   <button class="btn btn-default">1</button>
                   <button class="btn btn-default">2</button>
                   <button class="btn btn-default">3</button>
                   <button class="btn btn-default">+</button>
                 </div>
+            </div>
+            <div class="panel-body">
                 <div>
                   <h4 class="schedule-header">My Hotel</h4>
                   <p>Placeholder hotel</p>
                 </div>
-
+                <hr/>
                 <div>
                   <h4 class="schedule-header">My Restaurants</h4>
                   <p>Placeholder restaurant 1</p>
                   <p>Placeholder restaurant 2</p>
                 </div>
-
+                <hr/>
                 <div>
                   <h4 class="schedule-header">My Activities</h4>
                   <p>Placeholder acvitity 1</p>
@@ -73,6 +81,8 @@
                   <p>Placeholder acvitity 3</p>
                   <p>Placeholder activity 4</p>
                 </div>
+            <!-- </div> -->
+            </div>
           </div>
       </div>
 
